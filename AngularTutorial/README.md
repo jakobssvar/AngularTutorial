@@ -1,3 +1,8 @@
+
+
+#cd angular-tour-of-heroes
+#ng serve "C:\Users\Jakob\source\repos\AngularTutorial\AngularTutorial"
+
 # AngularTutorial
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
