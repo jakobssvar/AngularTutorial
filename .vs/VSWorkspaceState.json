@@ -4,6 +4,7 @@
     "\\AngularTutorial",
     "\\AngularTutorial\\src",
     "\\AngularTutorial\\src\\app",
+    "\\AngularTutorial\\src\\app\\hero-detail",
     "\\AngularTutorial\\src\\app\\heroes"
   ],
   "SelectedNode": "\\AngularTutorial\\src\\app\\heroes\\heroes.component.ts",
