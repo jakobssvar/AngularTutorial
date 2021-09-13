@@ -1,6 +1,6 @@
 
 
-#cd angular-tour-of-heroes
+#cd C:\Users\Jakob\source\repos\AngularTutorial\AngularTutorial
 #ng serve "C:\Users\Jakob\source\repos\AngularTutorial\AngularTutorial"
 
 # AngularTutorial
