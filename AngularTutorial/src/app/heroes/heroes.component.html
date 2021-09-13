@@ -1,25 +1,35 @@
 <h2>My Heroes:</h2>
-<ul class="heroes">
+<div class="row">
+  <div class="column">
+    <ul class="heroes">
 
-  <li *ngFor="let hero of heroes"
-      [class.selected]="hero===selectedHero"
-      (click)="onSelect(hero)">
-    <span class="badge"> {{hero.id}}</span> {{hero.name}}  {{hero.description}}
-  </li>
-</ul>
+      <li *ngFor="let hero of heroes"
+          [class.selected]="hero===selectedHero"
+          (click)="onSelect(hero)">
+        <span class="badge"> {{hero.id}}</span> {{hero.name}}  {{hero.description}}
+      </li>
+    </ul>
 
+    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+  </div>
 
-<div *ngIf="selectedHero">
-
-
-  <h2>{{selectedHero.name | uppercase}}s details</h2>
-  <div><span>ID: </span>{{selectedHero.id}}</div>
-  <div>
-    <label for="hero-name">Hero name: </label>
-    <input id="hero-name" [(ngModel)]="selectedHero.name" placeholder="name">
-    <div>
-      <label for="hero-description">Hero details: </label>
-      <input id="hero-description" [(ngModel)]="selectedHero.description" placeholder="the unknown">
+  <div class="column">
+    <div *ngIf="selectedHero&&selectedHero2&&selectedHero!=selectedHero2">
+      <button (click)="startFight(selectedHero,selectedHero2)">Fight!</button>
     </div>
   </div>
+
+  <div class="column">
+    <ul class="heroes">
+
+      <li *ngFor="let hero of heroes"
+          [class.selected]="hero===selectedHero2"
+          (click)="onSelect2(hero)">
+        <span class="badge"> {{hero.id}}</span> {{hero.name}}  {{hero.description}}
+      </li>
+    </ul>
+
+    <app-hero-detail [hero]="selectedHero2"></app-hero-detail>
+  </div>
 </div>
+

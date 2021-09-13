@@ -1,0 +1,19 @@
+
+<div *ngIf="hero">
+
+
+  <h3>{{hero.name | uppercase}}:</h3>
+  <div><span>ID: </span>{{hero.id}}</div>
+  <label for="hero-name">Hero name: </label>
+  <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+  <div><span>Lvl: </span>{{hero.lvl}}</div>
+  <div><span>Exp: </span>{{hero.exp}} / {{expLimit[hero.lvl-1]}}</div>
+  <div><span>Hp: {{hero.hp}} / </span>{{hero.maxHp}}</div>
+  <div><span>Str: </span>{{hero.str}}</div>
+  <div><span>Def: </span>{{hero.def}}</div>
+  <div><span>Spd: </span>{{hero.spd}}</div>
+  <div>
+    <label for="hero-description">Hero details: </label>
+    <input id="hero-description" [(ngModel)]="hero.description" placeholder="the unknown">
+  </div>
+</div>

@@ -5,8 +5,13 @@ h1 {
   font-size: 250%;
 }
 
-h2, h3 {
-  color: #444;
+h2 {
+  color: #256;
+  font-family: American Typewriter, serif;
+  font-size: 200%;
+}
+ h3 {
+  color: #256;
   font-family: American Typewriter, serif;
   font-weight: lighter;
 }
