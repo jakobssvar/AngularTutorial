@@ -2,7 +2,7 @@
 <div class="row">
   <div class="column">
     <ul class="heroes">
-
+      <app-hero-detail [hero]="selectedHero"></app-hero-detail>
       <li *ngFor="let hero of heroes"
           [class.selected]="hero===selectedHero"
           (click)="onSelect(hero)">
@@ -10,22 +10,22 @@
       </li>
     </ul>
 
-    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+    
   </div>
 
-  <div class="column">
+  <div class="column2">
     <app-messages></app-messages>
     <div *ngIf="selectedHero&&selectedHero2&&selectedHero!=selectedHero2">
-      <button (click)="startFight(selectedHero,selectedHero2)">Fight!</button>
+      <button class="button" (click)="startFight(selectedHero,selectedHero2)">Fight!</button>
     </div>
     <div *ngIf="!selectedHero||!selectedHero2||selectedHero==selectedHero2">
       Please selct two different Heroes...
     </div>
   </div>
 
-  <div class="column">
+  <div class="column3">
     <ul class="heroes">
-
+      <app-hero-detail [hero]="selectedHero2"></app-hero-detail>
       <li *ngFor="let hero of heroes"
           [class.selected]="hero===selectedHero2"
           (click)="onSelect2(hero)">
@@ -33,7 +33,7 @@
       </li>
     </ul>
 
-    <app-hero-detail [hero]="selectedHero2"></app-hero-detail>
+    
   </div>
 </div>
 

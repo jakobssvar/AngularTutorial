@@ -1,0 +1,13 @@
+.clear {
+  background-color: dodgerblue; /* Green */
+  border: groove;
+  border-color: aqua;
+  border-radius: 20px;
+  color: dimgray;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  align-self: center;
+}

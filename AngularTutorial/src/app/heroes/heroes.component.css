@@ -4,6 +4,30 @@
   float: left;
   width: 33.33%;
 }
+.column2 {
+  float: left;
+  width: 33.33%;
+
+}
+.column3 {
+  float: right;
+  width: 33.33%;
+
+}
+
+.button {
+  background-color: orangered; /* Green */
+  border: groove;
+  border-color: orange;
+  border-radius: 20px;
+  color: dimgray;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  align-self:center;
+}
 
 .heroes {
   margin: 0 0 2em 0;
@@ -60,13 +84,7 @@
   }
 
 
-/* Clear floats after the columns */
-.row:after {
-    float:right;
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 input {
   padding: .0rem;
