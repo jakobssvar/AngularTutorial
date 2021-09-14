@@ -63,12 +63,12 @@ export class HeroesComponent implements OnInit {
     }
     hero.numberOfFights++;
     hero2.numberOfFights++;
-    if (hero.numberOfFights % 2 == 0) {
+    if (hero2.numberOfFights % 2 == 0) {
       hero2.hp = hero2.maxHp;
         this.messageService.add(hero2.name + " was healed.");
 
     }
-    if (hero2.numberOfFights % 2 == 0) {
+    if (hero.numberOfFights % 2 == 0) {
       hero.hp = hero.maxHp;
         this.messageService.add(hero.name + " was healed.");
     }

@@ -18,6 +18,9 @@
     <div *ngIf="selectedHero&&selectedHero2&&selectedHero!=selectedHero2">
       <button (click)="startFight(selectedHero,selectedHero2)">Fight!</button>
     </div>
+    <div *ngIf="!selectedHero||!selectedHero2||selectedHero==selectedHero2">
+      Please selct two different Heroes...
+    </div>
   </div>
 
   <div class="column">
