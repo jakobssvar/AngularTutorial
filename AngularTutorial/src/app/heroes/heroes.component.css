@@ -2,31 +2,43 @@
 
 .column {
   float: left;
-  width: 33.33%;
+  width: 28.0%;
 }
 .column2 {
   float: left;
   width: 33.33%;
+  text-align:center;
 
 }
 .column3 {
   float: right;
   width: 33.33%;
-
+  text-align: right;
 }
 
+
+.container {
+  height: 40px;
+  position: relative;
+  border: hidden 3px;
+}
 .button {
   background-color: orangered; /* Green */
   border: groove;
   border-color: orange;
   border-radius: 20px;
-  color: dimgray;
-  padding: 10px 22px;
+  color: yellow;
+  padding: 5px 8px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  align-self:center;
+  align-self: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .heroes {
@@ -80,6 +92,21 @@
     top: -4px;
     height: 1.8em;
     margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .heroes .badgeR {
+    display: inline-block;
+    font-size: small;
+    color: dodgerblue;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #405061;
+    line-height: 1em;
+    position: relative;
+    right: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-left: .8em;
     border-radius: 4px 0 0 4px;
   }
 

@@ -15,8 +15,10 @@
 
   <div class="column2">
     <app-messages></app-messages>
-    <div *ngIf="selectedHero&&selectedHero2&&selectedHero!=selectedHero2">
-      <button class="button" (click)="startFight(selectedHero,selectedHero2)">Fight!</button>
+    <div class="container">
+      <div *ngIf="selectedHero&&selectedHero2&&selectedHero!=selectedHero2">
+        <button class="button" (click)="startFight(selectedHero,selectedHero2)">Fight!</button>
+      </div>
     </div>
     <div *ngIf="!selectedHero||!selectedHero2||selectedHero==selectedHero2">
       Please selct two different Heroes...
@@ -29,8 +31,8 @@
       <li *ngFor="let hero of heroes"
           [class.selected]="hero===selectedHero2"
           (click)="onSelect2(hero)">
-        <span class="badge"> {{hero.id}}</span> {{hero.name}}  {{hero.description}}
-      </li>
+          {{hero.name}}  {{hero.description}}<span class="badgeR">{{hero.id}}</span>
+</li>
     </ul>
 
     
