@@ -9,4 +9,5 @@ export interface Hero {
   str: number;
   def: number;
   spd: number;
+  numberOfFights:number;
 }
