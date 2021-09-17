@@ -4,8 +4,10 @@
     "\\AngularTutorial",
     "\\AngularTutorial\\src",
     "\\AngularTutorial\\src\\app",
+    "\\AngularTutorial\\src\\app\\dashboard",
     "\\AngularTutorial\\src\\app\\hero-detail",
-    "\\AngularTutorial\\src\\app\\heroes"
+    "\\AngularTutorial\\src\\app\\heroes",
+    "\\AngularTutorial\\src\\app\\messages"
   ],
   "SelectedNode": "\\AngularTutorial\\src\\app\\heroes\\heroes.component.ts",
   "PreviewInSolutionExplorer": false

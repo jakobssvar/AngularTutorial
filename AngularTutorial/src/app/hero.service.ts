@@ -14,6 +14,11 @@ export class HeroService {
     return heroes;
 
   }
+  getHero(id: number) {
+    const hero = HEROES.find(h => h.id === id);
+    this.messageService.add("Hero Found.");
+
+  }
 
   constructor(public messageService: MessageService) { }
 }

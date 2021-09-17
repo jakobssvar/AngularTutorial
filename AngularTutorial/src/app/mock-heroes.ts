@@ -6,7 +6,7 @@ export const HEROES: Hero[] = [
   { id: 2, name: 'Citara', description: 'the sour face', lvl: 1, exp: 0, maxHp: 30, hp: 30, str: 2, def: 3, spd: 13, numberOfFights: 0 },
   { id: 3, name: 'Dagar', description: 'the fearsome', lvl: 1, exp: 0, maxHp: 10, hp: 10, str: 50, def: 1, spd: 50, numberOfFights: 0 },
   { id: 4, name: 'Erik', description: 'the viking', lvl: 1, exp: 0, maxHp: 200, hp: 200, str: 15, def: 1, spd: 25, numberOfFights: 0 },
-  { id: 5, name: 'Fredrick', description: 'the black butler', lvl: 1, exp: 0, maxHp: 125, hp: 125, str: 15, def: 2, spd: 30, numberOfFights: 0 },
+  { id: 5, name: 'Fredrick', description: 'the black butler   who was also kinda lonely and not very obtuse', lvl: 1, exp: 0, maxHp: 125, hp: 125, str: 15, def: 2, spd: 30, numberOfFights: 0 },
   { id: 6, name: 'George', description: 'the king', lvl: 1, exp: 0, maxHp: 70, hp: 70, str: 5, def: 5, spd: 15, numberOfFights: 0 },
   { id: 7, name: 'Helen', description: 'of Troy', lvl: 1, exp: 0, maxHp: 200, hp: 200, str: 2, def: 20, spd: 10, numberOfFights: 0 },
   { id: 8, name: 'Ingrid', description: 'the ferociously obtuse', lvl: 1, exp: 0, maxHp: 1000, hp: 1000, str: 1, def: 1, spd: 2, numberOfFights: 0 },
