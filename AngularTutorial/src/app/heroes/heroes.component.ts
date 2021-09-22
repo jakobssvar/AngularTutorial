@@ -22,7 +22,7 @@ export class HeroesComponent implements OnInit {
     this.messageService = messageService;
   }
   ngOnInit(): void {
-    //this.messageService = this.heroService.messageService;
+
      
     this.getHeroes();
   }

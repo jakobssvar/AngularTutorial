@@ -16,22 +16,11 @@ import { error } from '@angular/compiler/src/util';
 export class DashboardComponent implements OnInit {
   heroes: Hero[] = [];
   hero?: Hero;
-  
+
   selectedHero?: Hero;
   constructor(private route: ActivatedRoute, private messageService: MessageService,
     private location: Location, private heroService: HeroService) {
 
-
-   /* 
-    });*/
-      this.getHeroes();
-
-      this.messageService.add("The selected hero is " + this.selectedHero);
-
-  }
-
-  ngOnChange():void {
-    this.messageService.add("The change happend  " + this.selectedHero);
   }
 
   getHeroes(): void {
