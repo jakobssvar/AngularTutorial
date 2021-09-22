@@ -1,4 +1,10 @@
 <h2>Top Heroes (alphabetically)</h2>
 <div class="heroes-menu">
-  <a *ngFor="let hero of heroes" routerLink="/detail/{{hero.id}}"> {{hero.name}} </a>
+  <a *ngFor="let hero of heroes" routerLink="/dashboard/{{hero.id}}"> {{hero.name}} </a>
 </div>
+<button (click)="backButtonClick()">Go Back</button>
+<div *ngIf="selectedHero!=undefined" class="exchangableDetail">
+  <app-hero-detail [hero]="selectedHero"></app-hero-detail>
+
+</div>
+ <app-messages></app-messages>

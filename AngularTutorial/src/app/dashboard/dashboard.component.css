@@ -5,18 +5,24 @@ h2{
     background-color: #123;
   }
 
-.heroes-menu {
-    padding: 0;
-    margin: auto;
-    max-width: 1000px;
+.exchangableDetail{
+    text-align:center;
+    align-self:auto;
 
-    /* flexbox stuff*/
-    display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: flex-start;
-    align-items: flex-start;
+}
+
+
+.heroes-menu {
+  padding: 0;
+  margin: auto;
+  max-width: 1000px;
+  /* flexbox stuff*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  align-items: flex-start;
 }
 
 a{
