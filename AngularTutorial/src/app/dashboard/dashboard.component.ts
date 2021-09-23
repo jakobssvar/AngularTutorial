@@ -1,12 +1,10 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Hero } from '../hero';
 import { HeroService } from '../hero.service';
-import { HeroDetailComponent } from '../hero-detail/hero-detail.component';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { MessageService } from '../message.service';
-import { identifierModuleUrl } from '@angular/compiler';
-import { error } from '@angular/compiler/src/util';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -28,7 +26,6 @@ export class DashboardComponent implements OnInit {
       .subscribe(heroes => this.heroes = heroes.slice(0, 8));
   }
   ngOnInit(): void {
-    let five: number = 5;
     this.route.params.subscribe(routeParams => {
       this.selectedHero = this.heroService.getHero(Number(routeParams.id));
       if (this.selectedHero != undefined) {

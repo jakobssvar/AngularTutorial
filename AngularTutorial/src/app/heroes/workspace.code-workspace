@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../stretch/checkdPOC"
+		},
+		{
+			"path": "../../../../../CheckdDashboard"
+		},
+		{
+			"path": "../../.."
+		}
+	],
+	"settings": {}
+}

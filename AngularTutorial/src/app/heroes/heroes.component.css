@@ -1,19 +1,20 @@
 /* HeroesComponent's private CSS styles */
 .columnContainer {
-  display: grid;
-  column-gap: 5px;
- grid-template-columns:auto auto auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
   .columnContainer .column {
-    /*float: left;*/
+ text-align: left;
+
   }
   .columnContainer .column2 {
-    float: left;
     text-align: center;
   }
   .columnContainer .column3 {
 
     text-align: right;
+
 
   }
 
@@ -46,7 +47,7 @@
 .heroLine {
   width: 13em;
   overflow: hidden;
-  text-overflow:clip;
+  text-overflow:ellipsis;
 }
 .heroes {
   margin: 0 0 2em 0;
@@ -60,7 +61,7 @@
     position: relative;
     left: 0;
     background-color: #EEE;
-    margin: .5em;
+    margin: .4em ;
     padding: .3em 0;
     height: 1.6em;
     border-radius: 4px;
@@ -115,8 +116,9 @@
     padding: 0.8em 0.7em 0 0.7em;
     background-color: #405061;
     line-height: 1em;
-    position:sticky;
-    right: -1px;
+    position:relative;
+    -ms-text-align-last: right;
+    left: 0px;
     top: -4px;
     height: 1.8em;
     margin-left: .8em;

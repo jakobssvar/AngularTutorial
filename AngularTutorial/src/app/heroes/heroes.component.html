@@ -1,5 +1,6 @@
 <h2>My Heroes:</h2>
 <div class="columnContainer">
+
   <div class="column">
     <ul class="heroes">
       <app-hero-detail [hero]="selectedHero"></app-hero-detail>
@@ -31,7 +32,7 @@
       <li *ngFor="let hero of heroes"
           [class.selected]="hero===selectedHero2"
           (click)="onSelect2(hero)">
-        <span class="heroLine">{{hero.name}}  {{hero.description}}</span><span class="badgeR">{{hero.id}}</span>
+          <span class="heroLine">{{hero.name}}  {{hero.description}}</span><span class="badgeR">{{hero.id}}</span>
 </li>
     </ul>
 
